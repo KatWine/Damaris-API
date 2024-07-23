@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
 });
 
 // Serve React app for any other route
-app.get('*', (req, res) => {
+app.get('/review', (req, res) => {
     res.sendFile(path.join(__dirname, '../Damaris', 'index.html'));
 });
 
